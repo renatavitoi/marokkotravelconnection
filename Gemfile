@@ -10,6 +10,10 @@ gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
+gem "bootstrap"
+gem "sassc-rails"
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 group :development, :test do
@@ -18,4 +22,5 @@ end
 group :development do
   gem "web-console"
 end
+
 

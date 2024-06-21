@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'home/uberuns'
   get 'home/kontakt'
   get 'home/faqs'
-  #get 'home/index'
+  get 'home/reiseplanung'
+  get 'home/index'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

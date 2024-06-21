@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">    
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="/assets/config/images/marokkotravelconnection-logo.png" alt="Logo" width="30" height="24">
+    <%= link_to 'Marokko Travel Connection', 
+    root_path, class:"navbar-brand" %>
+    <a>
+      <img src="/assets/config/images/marokkotravelconnection-logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> Marokko Travel Conncetion
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,22 +11,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <%= link_to 'Home', home_index_path, class:"nav-link" %>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toogle" hre="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Tour Packages
           </a>
-          <ul class="dropdown-menu">
+             <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Experiences</a></li>
           </ul>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Rewiews</a>
+              <%= link_to 'Reviews', home_reviews_path, class:"nav-link active"%>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Blog</a>
+              <%= link_to 'Blog', home_blog_path, class:"nav-link active" %>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Über Uns</a>
+                <%= link_to 'Über Uns', home_uberuns_path, class:"nav-link active"%>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,7 +37,7 @@
           </ul>
           <nav class="navbar bg-body-tertiary">
             <form class="container-fluid justify-content-start">
-              <button class="btn btn-outline-success me-2" type="button">Reiseplanung</button>
+              <button class="btn btn-sm btn-outline-secondary" type="button">Reisenplanung</button>
             </form>
           </nav>
         </li>
