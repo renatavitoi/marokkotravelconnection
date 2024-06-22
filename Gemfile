@@ -9,7 +9,7 @@ gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
 gem "jbuilder"
-gem "bootstrap"
+gem "bootstrap", '~> 5.1.0'
 gem "sassc-rails"
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -29,5 +29,7 @@ end
 group :development, :test do 
   gem 'sqlite3'
 end
+
+
 
 
