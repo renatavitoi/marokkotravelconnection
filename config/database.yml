@@ -1,27 +1,18 @@
-# config/database.yml
 default: &default
-  adapter: postgreesql
+  adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
 
 development:
   <<: *default
-  database: 
+  database: your_database_name_development
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: marokkotravelconnection_development
+  database: your_database_name_test
 
 production:
   <<: *default
-  database: marokkocotravelconnection_test
-  username: marokkotravelconection
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD']%>
-  host: <%= ENV['MAROCOTRAVELCONNECTION_HOST']%>
-
-
-
+  database: your_database_name_production
+  username: your_database_username
+  password: <%= ENV['DATABASE_PASSWORD'] %>
