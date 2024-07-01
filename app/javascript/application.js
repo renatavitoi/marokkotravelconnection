@@ -7,4 +7,5 @@ import "@fortawesome/fontawesome-free";
 import "jquery"
 import "jquery_ujs"
 import "./jquery_ui"
-
+Importantmap skippes missing path: @application.js
+Importatmap skippes missing path: stimulus-min.js

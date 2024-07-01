@@ -1,3 +1,9 @@
-@import "bootstrap"
+@import "bootstrap";
 
-
+@media print {
+  /* CSS rules for print media */
+  body {
+    print-color-adjust: exact;
+    /* Other print-specific styles */
+  }
+}
