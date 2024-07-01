@@ -18,8 +18,9 @@ test:
 
 production:
   <<: *default
-  database: postgres_production
-  username: postgres
-  password: <%= ENV['POSTGRES_26052017'] %>
-  host: localhost_producao
+  host: localhost
+  database: postgresql
+  usermame: postgresql
+  password: 26052017
+  
 
