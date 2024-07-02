@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   get 'home/uberuns'
   get 'home/kontakt'
   get 'home/faqs'
-  get 'home/reiseplanung'
+  get 'home/reisenplanung', to: 'home#reisenplanung', as: 'home_reisenplanung'
   get 'home/index'
+
+  post 'home/reisenplanung', to:'home#reisenplanung'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

@@ -1,47 +1,53 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light">    
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
   <div class="container-fluid">
     <a>
-      <%= image_tag 'marokkotravelconnection-logo.png'%>
+      <%= image_tag 'marokkotravelconnection-logo.png' %>
     </a>
-    <%= link_to 'Marokko Travel Connection', 
-    root_path, class:"navbar-brand" %>
+    <%= link_to 'Home', root_path, class: "navbar-brand" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <%= link_to 'Home', home_index_path, class:"nav-link" %>
+          <%= link_to 'Home', home_index_path, class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toogle" hre="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Tour Packages</a>
-             <ul class="dropdown-menu">
-            <li><%= link_to 'Experiences', home_experiences_path, class:'dropdown-item' %></li>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tour Packages
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'Experiences', home_experiences_path, class: 'dropdown-item' %></li>
           </ul>
-          <li class="nav-item">
-              <%= link_to 'Reviews', home_reviews_path, class:"nav-link active" %>
-            </li> 
-            <li class="nav-item">
-              <%= link_to 'Blog', home_blog_path, class:"nav-link active" %>
-              <li class="nav-item">
-                <%= link_to 'Über Uns', home_uberuns_path, class:"nav-link active"%>
-              </li>
-               <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toogle" hre="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Kontakt</a>
-             <ul class="dropdown-menu">
-            <li><%= link_to 'FAQS', home_faqs_path, class:'dropdown-item' %></li>
-          </ul>
-          <nav class="navbar bg-body-tertiary">
-            <form class="container-fluid justify-content-start">
-              <button class="btn btn-sm btn-outline-secondary" type="button">Reisenplanung</button>
-            </form>
-          </nav>
         </li>
+        <li class="nav-item">
+          <%= link_to 'Reviews', home_reviews_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Blog', home_blog_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Über Uns', home_uberuns_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kontakt
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to 'FAQS', home_faqs_path, class: 'dropdown-item' %></li>
+          </ul>
         </li>
       </ul>
-      </form>
     </div>
   </div>
+  <nav class="navbar bg-body-tertiary">
+    <%= form_with url: home_reisenplanung_path, method: :post, local: true do|form| %>
+    <div class="container-fluid justfy-content-start">
+    <%= form.submit 'Reisenplanung', class: "btn btn-sm btm-outline-secondary" %> 
+  </div>
+  <% end %>
+  </nav>
 </nav>
+
+ 
+

@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @response = flash[:response]
   end
 
   def tourpackages
@@ -23,4 +24,13 @@ class HomeController < ApplicationController
   def faqs
   end
 
+  def reisenplanung
+    flash[:response] = "You clicked the button"
+    redirect_to root_path
+     @response = "you clicked the link!"
+  end
+
 end
+
+
+
