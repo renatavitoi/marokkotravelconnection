@@ -24,12 +24,11 @@ class HomeController < ApplicationController
   def faqs
   end
 
-  def reisenplanung
-    flash[:response] = "You clicked the button"
+  def reisenplanungstarten
+    flash[:response]
     redirect_to root_path
      @response = "you clicked the link!"
   end
-
 end
 
 

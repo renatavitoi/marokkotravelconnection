@@ -1,4 +1,4 @@
-	<%= image_tag 'marokkotravelconnection.jpg' %>
+	<%= image_tag '1.jpg' %>
 	<br/>
 	<br/>
 
@@ -31,6 +31,15 @@
 <p>Schließen Sie die Augen und stellen Sie sich vor, wie der warme Sand der Sahara Ihre Füße umschmeichelt, wie der Duft exotischer Gewürze Ihre Sinne betört und wie das herzliche Lachen der Menschen Ihr Herz erwärmt. Das ist Marokko, und wir laden Sie ein, es mit uns zu entdecken.</p>
 <br/>
 <h3>Ihr Abenteuer beginnt jetzt – Kontaktieren Sie uns noch heute!</h3>
+<br/>
+<div class="container">
+  <%= button_to "Reisenplanung starten", home_reisenplanungstarten_path, method: :post, class: "btn btn-sm btn-outline-secondary" %>
+  <% if @response.present? %>
+  <p><%= @reponse %></p>
+  <% end %>
+</div>
+
+ 
 
 
 

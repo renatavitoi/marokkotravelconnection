@@ -41,13 +41,10 @@
     </div>
   </div>
   <nav class="navbar bg-body-tertiary">
-    <%= form_with url: home_reisenplanung_path, method: :post, local: true do|form| %>
-    <div class="container-fluid justfy-content-start">
-    <%= form.submit 'Reisenplanung', class: "btn btn-sm btm-outline-secondary" %> 
-  </div>
+    <%= button_to "Reisenplanung starten", home_reisenplanungstarten_path, method: :post, class:"btn btn-sm btn-outline-secondary" %>
+    <%if @response.present? %>
+    <p><%= @response %></p>
   <% end %>
   </nav>
 </nav>
-
- 
 

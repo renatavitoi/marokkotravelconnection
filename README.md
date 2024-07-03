@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Developed by Renata Bandeira Vitoi. An e-commerce for a travel agency in Morocco where the clients can plan your travel choosing unique tours arround Morocco.
 
 Things you may want to cover:
 
