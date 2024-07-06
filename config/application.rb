@@ -2,15 +2,14 @@ require_relative "boot"
 
 require "rails/all"
 
+
+# config/application.rb
 module Marokkotravelconnection
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.1
+    # Other configurations...
 
-    # Add app/assets/images to asset load path.
-    config.assets.path << Rails.root.join('app', 'assets', 'images')
-
-    # Don't generate system test files.
-    config.generators.system_tests = nil
+    # Add the images path to the asset pipeline
+    config.assets.enabled = true
   end
 end
+

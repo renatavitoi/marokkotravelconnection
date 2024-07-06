@@ -10,13 +10,15 @@ gem "importmap-rails"
 gem "turbo-rails"
 gem "jbuilder"
 gem "bootstrap", '~> 5.1.0'
-gem "sassc-rails", "~> 2.1"
+gem "sassc-rails", ">=6.0"
 gem "jquery-rails"
-gem "jquery-ui-rails"
+gem "jquery-rails"
 gem "uglifier", ">= 1.3.0"
 gem "coffee-rails", "~> 5.0"
 gem 'zeitwerk', '>= 2.6.16'
+gem  "turbolinks", "~>5"
 gem "pg", "~> 1.2"
+
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
