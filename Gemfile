@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.1.0"
+ruby "3.2.4"
 
 gem "rails", ">= 7.1.3"
 gem "sprockets-rails"
@@ -8,7 +8,6 @@ gem "sprockets", "~> 4.0"
 gem "puma", ">= 6.4.2"
 gem "importmap-rails"
 gem "turbo-rails"
-gem "stimulus-rails"
 gem "jbuilder"
 gem "bootstrap", '~> 5.1.0'
 gem "sassc-rails", "~> 2.1"
