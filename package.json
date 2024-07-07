@@ -4,31 +4,22 @@
   "description": "Travel agency e-commerce from Morocco",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-     },
-  "dependencies": {
-    "express": "^4.17.1"
+    "start": "node index.js"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
-}
-
-  "author": "Renata Vitoi",
-  "license": "ISC",
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "express": "^4.17.1",
     "jquery": "^3.7.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "nodemon": "^2.0.7"
   },
-
-"engines": {
-  "node": "20.x",
-  "npm": "10.x",
-  "yarn": "1.22.x"
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x",
+    "yarn": "1.22.x"
+  },
+  "author": "Renata Vitoi",
+  "license": "ISC"
 }
-}
-
