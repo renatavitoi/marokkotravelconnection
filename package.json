@@ -1,12 +1,21 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "jquery": "^3.7.1",
-    "popper.js": "^1.16.1",
-    "@popperjs/core": "^2.11.8"
-  },
+  "name": "marokkotravelconnection",
+  "version": "1.0.0",
+  "description": "A travel agency e-commerce from Morocco",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Renata Vitoi",
+  "license": "ISC",
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "express": "^4.17.1",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1"
   },
   "engines": {
     "node": ">=20.0.0",
@@ -14,23 +23,3 @@
     "yarn": ">=1.22.0"
   }
 }
-
-
-{
-  "name": "marokkotravelconnection",
-  "version": "1.0.0",
-  "description": "A project description",
-  "main": "index.js",
-  "scripts": {
-    "scripts": {
-      "start": "node index.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Renata Vitoi",
-    "license": "ISC",
-    "dependencies": {
-      "express": "^4.17.1"
-    }
-  }
-}
-
