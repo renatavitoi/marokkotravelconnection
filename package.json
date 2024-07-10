@@ -24,11 +24,4 @@
   },
   "author": "Renata Vitoi",
   "license": "ISC"
-},
-
-{
-  "dependencies": {
-    "nodemon": "^2.0.22",
-    "simple-update-notifier": "^1.1.1" // Ensure this is updated to the latest version
-  }
 }
