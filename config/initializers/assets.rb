@@ -13,3 +13,5 @@ Rails.application.config.assets.paths << Rails.root.join('app','assets','images'
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
+# Example of setting a key with a valid length
+Rails.application.config.assets.key = ENV['ASSETS_KEY']
