@@ -20,6 +20,7 @@ gem "pg", "~> 1.5.6"
 gem "rdoc", "~> 6.7.0"
 gem "irb", "~> 1.14.0"
 
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem "therubyracer", platforms: :ruby
 
@@ -47,4 +48,5 @@ group :test do
 end
 
 gem "tzinfo-data", platforms: [:mingw, :x64_mingw, :mswin]
-gem "web-console", ">= 4.2.1"
+gem 'web-console', group: :development
+
