@@ -15,3 +15,5 @@ Rails.application.config.assets.paths << Rails.root.join('app','assets','images'
 
 # Example of setting a key with a valid length
 Rails.application.config.assets.key = ENV['ASSETS_KEY']
+Rails.application.credentials.some_key
+
