@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/tourpackages'
+  get 'home/tourpackages' 
   get 'home/experiences'
   get 'home/reviews'
   get 'home/blog'
