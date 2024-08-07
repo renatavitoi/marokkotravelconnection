@@ -9,7 +9,7 @@ gem "puma", ">= 6.4.2"
 gem "importmap-rails"
 gem "turbo-rails"
 gem "jbuilder"
-gem "bootstrap", "~> 5.1.0"
+gem "bootstrap", "~> 5.3"  # Keep only this version
 gem "sassc-rails", "~> 2.1.2"
 gem "jquery-rails"
 gem "uglifier", ">= 4.2.0"
@@ -20,6 +20,7 @@ gem "pg", "~> 1.5.6"
 gem "rdoc", "~> 6.7.0"
 gem "irb", "~> 1.14.0"
 gem 'terser'
+gem 'sass-rails', '>=6.0'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem "therubyracer", platforms: :ruby
@@ -49,4 +50,3 @@ end
 
 gem "tzinfo-data", platforms: [:mingw, :x64_mingw, :mswin]
 gem 'web-console', group: :development
-
