@@ -2,18 +2,12 @@
 @import "carousel";
 
 @media print {
-  /* CSS rules for print media */
   body {
     print-color-adjust: exact;
-    /* Other print-specific styles */
   }
 }
-
 
 /*
 *= require_self
 *= require_tree .
 */
-
-
-print-color-adjust: exact;

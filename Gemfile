@@ -12,14 +12,14 @@ gem "jbuilder"
 gem "bootstrap", "~> 5.1.0"
 gem "sassc-rails", "~> 2.1.2"
 gem "jquery-rails"
-gem "uglifier", ">= 1.3.0"
+gem "uglifier", ">= 4.2.0"
 gem "coffee-rails", "~> 5.0.0"
 gem "zeitwerk", ">= 2.6.16"
 gem "turbolinks", "~> 5"
 gem "pg", "~> 1.5.6"
 gem "rdoc", "~> 6.7.0"
 gem "irb", "~> 1.14.0"
-
+gem 'terser'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem "therubyracer", platforms: :ruby
