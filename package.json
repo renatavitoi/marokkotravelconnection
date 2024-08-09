@@ -4,8 +4,7 @@
   "description": "Travel agency e-commerce from Morocco",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "echo 'No build step required'"
+    "start": "node index.js"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
