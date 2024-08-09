@@ -4,8 +4,8 @@
   "description": "Travel agency e-commerce from Morocco",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "git push render main"
+    "start": "node index.js"
+    "build": "echo 'No build step required"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
@@ -25,3 +25,5 @@
   "author": "Renata Vitoi",
   "license": "ISC"
 }
+
+
