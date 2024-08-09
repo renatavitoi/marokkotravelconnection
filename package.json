@@ -25,3 +25,8 @@
   "author": "Renata Vitoi",
   "license": "ISC"
 }
+
+
+"scripts": {
+    "build": "git push render main"
+}

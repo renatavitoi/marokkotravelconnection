@@ -21,6 +21,8 @@ gem "rdoc", "~> 6.7.0"
 gem "irb", "~> 1.14.0"
 gem 'terser'
 gem 'sass-rails', '>=6.0'
+gem 'pry'
+gem 'pry-rails'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem "therubyracer", platforms: :ruby
