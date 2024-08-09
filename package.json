@@ -28,5 +28,5 @@
 
 
 "scripts": {
-    "build": "git push render main"
+    "build": "push render"
 }

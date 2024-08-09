@@ -6,17 +6,11 @@ databases:
 
 services:
   - type: web
-    name: marokkotravelconnectiom_render
+    name: marokkotravelconnectiom_render   # Make sure this is the correct name you want
     env: ruby
-    buildCommand: "bundle exec rake assets:precompile"
-    startCommand: "bundle exec puma -C config/puma.rb"
+    buildCommand: "./render-build.sh"       # Compile assets and other necessary build steps
+    startCommand: "RAILS_ENV=production bundle exec puma -C config/puma.rb" 
     publishPath: public
-
-
-   
- env: ruby
-    buildCommand: "./render-build.sh"
-    startCommand: "RAILS_ENV=production bundle exec rails s"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -24,5 +18,3 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-
-
