@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
+      "build": "git push render main"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
@@ -20,13 +21,8 @@
   "engines": {
     "node": "20.x",
     "npm": "10.x",
-    "yarn": "1.22.x"
   },
   "author": "Renata Vitoi",
   "license": "ISC"
 }
 
-
-"scripts": {
-    "build": "push render"
-}
