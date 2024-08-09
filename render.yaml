@@ -6,10 +6,10 @@ databases:
 
 services:
   - type: web
-    name: marokkotravelconnectiom_render   # Make sure this is the correct name you want
+    name: marokkotravelconnection_render 
     env: ruby
-    buildCommand: "./render-build.sh"       # Compile assets and other necessary build steps
-    startCommand: "RAILS_ENV=production bundle exec puma -C config/puma.rb" 
+    buildCommand: "./render-build.sh"  
+    startCommand: "RAILS_ENV=production bundle exec puma -C config/puma.rb"
     publishPath: public
     envVars:
       - key: DATABASE_URL
