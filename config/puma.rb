@@ -1,35 +1,30 @@
-# This configuration file will be evaluated by Puma. The top-level methods that
-# are invoked here are part of Puma's configuration DSL. For more information
-# about methods provided by the DSL, see https://puma.io/puma/Puma/DSL.html.
+# Puma configuration file for your application
 
-# Puma can serve each request in a thread from an internal thread pool.
-# The `threads` method setting takes two numbers: a minimum and maximum.
-# Any libraries that use thread pools should be configured to match
-# the maximum value specified for Puma. Default is set to 5 threads for minimum
-# and maximum; this matches the default thread size of Active Record.
+# Set the minimum and maximum number of threads per worker
 max_threads_count = Integer(ENV.fetch("RAILS_MAX_THREADS") { 5 })
 min_threads_count = ENV.fetch("RAILS_MIN_THREADS") { max_threads_count }
 threads min_threads_count, max_threads_count
 
-# Specifies the `worker_timeout` threshold that Puma will use to wait before
-# terminating a worker in development environments.
+# Worker timeout setting (for development environments)
 worker_timeout 3600 if ENV.fetch("RAILS_ENV", "development") == "development"
 
-# Specifies the `port` that Puma will listen on to receive requests; default is 3000.
-port ENV.fetch("PORT") { 30000 }
+# Port Puma will listen on
+port ENV.fetch("PORT") { 3000 }
 
-# Specifies the `environment` that Puma will run in.
+# Environment Puma will run in
 environment ENV.fetch("RAILS_ENV") { "development" }
 
-# Specifies the `pidfile` that Puma will use.
+# Path to the PID file
 pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 
-# Use a single worker in production if worker mode is not supported
-workers 0
+# Number of workers to use (typically 0 in development)
+workers ENV.fetch("WEB_CONCURRENCY") { 0 }
 
-# Allow Puma to be restarted by `bin/rails restart` command.
-plugin :tmp_restart
-
-# Preload application for performance
+# Preload the application for performance
 preload_app!
 
+# Allow Puma to be restarted by `bin/rails restart`
+plugin :tmp_restart
+
+# Logging settings (optional, can be useful in production)
+stdout_redirect ENV.fetch("STDOUT_LOG") { 'log/puma.stdout.log' }, ENV.fetch("STDERR_LOG") { 'log/puma.stderr.log' }, true
