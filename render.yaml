@@ -8,8 +8,8 @@ services:
   - type: web
     name: marokkotravelconnection_render 
     env: ruby
-    buildCommand: "./render-build.sh"  
-    startCommand: "RAILS_ENV=production bundle exec puma -C config/puma.rb"
+    buildCommand: "bin/rails assets:precompile"  
+    startCommand: "bin/rails server -p $port"
     publishPath: public
     envVars:
       - key: DATABASE_URL
@@ -18,3 +18,4 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
+
